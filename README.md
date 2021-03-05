@@ -62,11 +62,11 @@ This repository is released under the MIT License (refer to the LICENSE file for
 ## Citation
 If you find the code or BioSR dataset helpful in your resarch, please cite the following paper:
 ```
-@article{nmeth2021DFCAN,
+@article{qiao2021evaluation,
   title={Evaluation and development of deep neural networks for image super-resolution in optical microscopy},       
   author={Chang Qiao, Di li, Yuting Guo, Chong Liu, Tao Jiang, Qionghai Dai and Dong Li},
   journal={Nature Methods},
-  pages={},
+  pages={194-202},
   year={2021},
   publisher={Nature Publishing Group}
 }
