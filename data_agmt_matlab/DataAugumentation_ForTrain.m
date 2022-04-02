@@ -27,7 +27,7 @@ addpath(genpath('./XxUtils'));
 % validate_cell_list: cells used for generating validation image patch pairs
 % validate_snr_list: snr levels used for generating validation image patch pairs
 %
-% Auther: Chang Qiao
+% Author: Chang Qiao
 % Email: qc17@mails.tsinghua.edu.cn
 % Version  : 2020/5/15
 % ------------------------------------------------------------------------
