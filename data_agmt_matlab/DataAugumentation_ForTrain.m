@@ -29,14 +29,14 @@ addpath(genpath('./XxUtils'));
 %
 % Author: Chang Qiao
 % Email: qc17@mails.tsinghua.edu.cn
-% Version  : 2020/5/15
+% Version: 2020/5/15
 % ------------------------------------------------------------------------
 
 %% set path and segmentation parameters
 SavePath = '../dataset/train/F-actin'; 
 DataPath = '../dataset/BioSR/F-actin';
 DataFilter = 'RawSIMData_level_*.mrc';
-GtFilter = 'SIM_gt.mrc';
+GtFilter = 'SIM_gt*.mrc';
 
 RotFlag = 2;
 SaveRawFlag = 1;
@@ -53,7 +53,7 @@ validate_cell_list = 1:5;
 validate_snr_list = 1:12;
 
 %% initialization
-
+% if processing Non-Linear SIM data
 if contains(SavePath,'Non-Linear'), n_perSIM = 25; else, n_perSIM = 9; end
 
 train_cell_num = length(train_cell_list);
