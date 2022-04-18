@@ -54,7 +54,7 @@ validate_snr_list = 1:12;
 
 %% initialization
 % if processing Non-Linear SIM data
-if contains(SavePath,'Non-Linear'), n_perSIM = 25; else, n_perSIM = 9; end
+if contains(SavePath,'Nonlinear'), n_perSIM = 25; else, n_perSIM = 9; end
 
 train_cell_num = length(train_cell_list);
 validate_cell_num = length(validate_cell_list);
