@@ -176,10 +176,10 @@ for i = train_cell_list
     data_gt = XxNorm(data_gt,0,100);
     data_gt = imadjust(data_gt,[bg_cut_prct,1],[]);
     
-    snr_num = length(validate_snr_list);
-    if validate_snr_list(end) > length(files_input)
-        validate_snr_list = validate_snr_list(1):length(files_input);
-        snr_num = length(validate_snr_list);
+    snr_num = length(train_snr_list);
+    if train_snr_list(end) > length(files_input)
+        train_snr_list = train_snr_list(1):length(files_input);
+        snr_num = length(train_snr_list);
     end
     
     for j = train_snr_list
@@ -246,4 +246,3 @@ for i = train_cell_list
         end
     end
 end
-
