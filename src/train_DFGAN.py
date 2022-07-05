@@ -262,7 +262,7 @@ for it in range(iterations):
         gloss_record.append(loss_generator[2])
 
     elapsed_time = datetime.datetime.now() - start_time
-    print("%d epoch: time: %s, d_loss = %.5s, d_acc = %.5s, g_loss = %s" % (
+    print("%d iteration: time: %s, d_loss = %.5s, d_acc = %.5s, g_loss = %s" % (
         it + 1, elapsed_time, loss_discriminator[0], loss_discriminator[1], loss_generator[2]))
 
     if (it + 1) % sample_interval == 0:
