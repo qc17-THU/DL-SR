@@ -203,7 +203,7 @@ for it in range(iterations):
     loss_record.append(loss_generator)
 
     elapsed_time = datetime.datetime.now() - start_time
-    print("%d epoch: time: %s, g_loss = %s" % (it + 1, elapsed_time, loss_generator))
+    print("%d iteration: time: %s, g_loss = %s" % (it + 1, elapsed_time, loss_generator))
 
     if (it + 1) % sample_interval == 0:
         images_path = glob.glob(train_images_path + '/*')
